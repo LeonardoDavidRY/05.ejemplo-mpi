@@ -1,0 +1,175 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "EjemploMPI",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ejemplo-mpi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ejemplo-mpi-Debug-0ff9e5cbac4d8b719d93.json",
+					"name" : "ejemplo-mpi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matrices_mult::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrices_mult-Debug-7cdbdb1b717d7ca0e419.json",
+					"name" : "matrices_mult",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "EjemploMPI",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ejemplo-mpi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ejemplo-mpi-Release-9fff4962ab0bc6809f23.json",
+					"name" : "ejemplo-mpi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matrices_mult::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrices_mult-Release-0bd12f020e97275bedd9.json",
+					"name" : "matrices_mult",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "EjemploMPI",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ejemplo-mpi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ejemplo-mpi-RelWithDebInfo-8befebc772c7ff17960f.json",
+					"name" : "ejemplo-mpi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matrices_mult::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrices_mult-RelWithDebInfo-7c25ceaa110900fda55c.json",
+					"name" : "matrices_mult",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/tools/Paralela/05.ejemplo-mpi/build",
+		"source" : "C:/tools/Paralela/05.ejemplo-mpi"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
