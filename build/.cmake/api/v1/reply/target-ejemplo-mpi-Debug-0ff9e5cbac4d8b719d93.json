@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Release/ejemplo-mpi.exe"
+			"path" : "Debug/ejemplo-mpi.exe"
 		},
 		{
-			"path" : "Release/ejemplo-mpi.pdb"
+			"path" : "Debug/ejemplo-mpi.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -20,7 +20,7 @@
 		],
 		"files" : 
 		[
-			"C:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake",
+			"c:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -37,7 +37,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 612,
+				"line" : 608,
 				"parent" : 1
 			},
 			{
@@ -60,7 +60,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O3 -DNDEBUG"
+					"fragment" : "-g"
 				}
 			],
 			"defines" : 
@@ -95,16 +95,12 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O3 -DNDEBUG",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "C:\\tools\\vcpkg-2026.03.18\\installed\\x64-mingw-dynamic\\lib\\libfmt.dll.a",
+				"fragment" : "C:\\tools\\vcpkg-2026.03.18\\installed\\x64-mingw-dynamic\\debug\\lib\\libfmtd.dll.a",
 				"role" : "libraries"
 			},
 			{

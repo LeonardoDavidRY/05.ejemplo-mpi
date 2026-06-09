@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/tools/P.Paralela/05.ejemplo-mpi/build"
+			"value" : "c:/tools/Paralela/05.ejemplo-mpi/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "3"
+			"value" : "4"
 		},
 		{
 			"name" : "CMAKE_CACHE_MINOR_VERSION",
@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "31"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe"
+			"value" : "C:/tools/mingw64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CONFIGURATION_TYPES",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cpack.exe"
+			"value" : "C:/tools/mingw64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/ctest.exe"
+			"value" : "C:/tools/mingw64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/tools/P.Paralela/05.ejemplo-mpi/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/tools/Paralela/05.ejemplo-mpi/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/tools/P.Paralela/05.ejemplo-mpi"
+			"value" : "C:/tools/Paralela/05.ejemplo-mpi"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -676,6 +676,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "C:/tools/mingw64/bin/ld.exe"
+		},
+		{
+			"name" : "CMAKE_LIST_FILE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of CMakeLists files to read"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "CMakeLists.txt"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -842,6 +854,18 @@
 			"value" : "1"
 		},
 		{
+			"name" : "CMAKE_PROJECT_COMPAT_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
 			"properties" : 
 			[
@@ -907,7 +931,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "windres"
+			"value" : "C:/tools/mingw64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1027,7 +1051,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.31"
+			"value" : "C:/tools/mingw64/share/cmake-4.1"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1151,7 +1175,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of static libraries during all build types."
+					"value" : "Flags used by the archiver during the creation of static libraries during all build types."
 				}
 			],
 			"type" : "STRING",
@@ -1167,7 +1191,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of static libraries during DEBUG builds."
+					"value" : "Flags used by the archiver during the creation of static libraries during DEBUG builds."
 				}
 			],
 			"type" : "STRING",
@@ -1183,7 +1207,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of static libraries during MINSIZEREL builds."
+					"value" : "Flags used by the archiver during the creation of static libraries during MINSIZEREL builds."
 				}
 			],
 			"type" : "STRING",
@@ -1199,7 +1223,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of static libraries during RELEASE builds."
+					"value" : "Flags used by the archiver during the creation of static libraries during RELEASE builds."
 				}
 			],
 			"type" : "STRING",
@@ -1215,7 +1239,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the linker during the creation of static libraries during RELWITHDEBINFO builds."
+					"value" : "Flags used by the archiver during the creation of static libraries during RELWITHDEBINFO builds."
 				}
 			],
 			"type" : "STRING",
@@ -1267,7 +1291,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake"
+			"value" : "c:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1295,7 +1319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/tools/P.Paralela/05.ejemplo-mpi/build"
+			"value" : "C:/tools/Paralela/05.ejemplo-mpi/build"
 		},
 		{
 			"name" : "EjemploMPI_IS_TOP_LEVEL",
@@ -1319,7 +1343,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/tools/P.Paralela/05.ejemplo-mpi"
+			"value" : "C:/tools/Paralela/05.ejemplo-mpi"
 		},
 		{
 			"name" : "VCPKG_APPLOCAL_DEPS",
@@ -1343,7 +1367,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/tools/vcpkg-2026.03.18/installed"
+			"value" : "c:/tools/vcpkg-2026.03.18/installed"
 		},
 		{
 			"name" : "VCPKG_MANIFEST_DIR",
@@ -1527,43 +1551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/tools/vcpkg-2026.03.18"
-		},
-		{
-			"name" : "_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "linker supports push/pop state"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "FALSE"
-		},
-		{
-			"name" : "_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "linker supports push/pop state"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "FALSE"
-		},
-		{
-			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "linker supports push/pop state"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "TRUE"
+			"value" : "c:/tools/vcpkg-2026.03.18"
 		},
 		{
 			"name" : "_VCPKG_INSTALLED_DIR",
@@ -1575,7 +1563,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/tools/vcpkg-2026.03.18/installed"
+			"value" : "c:/tools/vcpkg-2026.03.18/installed"
 		},
 		{
 			"name" : "fmt_DIR",

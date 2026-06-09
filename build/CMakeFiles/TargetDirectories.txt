@@ -1,4 +1,4 @@
-C:/tools/P.Paralela/05.ejemplo-mpi/build/CMakeFiles/ejemplo-mpi.dir
-C:/tools/P.Paralela/05.ejemplo-mpi/build/CMakeFiles/matrices_mult.dir
-C:/tools/P.Paralela/05.ejemplo-mpi/build/CMakeFiles/edit_cache.dir
-C:/tools/P.Paralela/05.ejemplo-mpi/build/CMakeFiles/rebuild_cache.dir
+C:/tools/Paralela/05.ejemplo-mpi/build/CMakeFiles/ejemplo-mpi.dir
+C:/tools/Paralela/05.ejemplo-mpi/build/CMakeFiles/matrices_mult.dir
+C:/tools/Paralela/05.ejemplo-mpi/build/CMakeFiles/edit_cache.dir
+C:/tools/Paralela/05.ejemplo-mpi/build/CMakeFiles/rebuild_cache.dir
