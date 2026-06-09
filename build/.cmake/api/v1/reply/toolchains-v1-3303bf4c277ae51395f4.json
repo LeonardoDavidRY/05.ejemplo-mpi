@@ -120,7 +120,7 @@
 			"compiler" : 
 			{
 				"implicit" : {},
-				"path" : "C:/tools/mingw64/bin/windres.exe"
+				"path" : "windres"
 			},
 			"language" : "RC",
 			"sourceFileExtensions" : 

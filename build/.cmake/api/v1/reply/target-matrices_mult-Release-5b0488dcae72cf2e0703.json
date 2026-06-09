@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Release/ejemplo-mpi.exe"
+			"path" : "Release/matrices_mult.exe"
 		},
 		{
-			"path" : "Release/ejemplo-mpi.pdb"
+			"path" : "Release/matrices_mult.pdb"
 		}
 	],
 	"backtrace" : 2,
@@ -20,7 +20,7 @@
 		],
 		"files" : 
 		[
-			"c:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake",
+			"C:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -31,19 +31,19 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 17,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 608,
+				"line" : 612,
 				"parent" : 1
 			},
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 21,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
@@ -89,13 +89,17 @@
 			]
 		}
 	],
-	"id" : "ejemplo-mpi::@6890427a1f51a3e7e1df",
+	"id" : "matrices_mult::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
 				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
@@ -115,8 +119,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "ejemplo-mpi",
-	"nameOnDisk" : "ejemplo-mpi.exe",
+	"name" : "matrices_mult",
+	"nameOnDisk" : "matrices_mult.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -137,7 +141,7 @@
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "matrices_mult.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

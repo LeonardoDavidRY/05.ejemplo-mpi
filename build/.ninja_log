@@ -1,6 +1,10 @@
 # ninja log v7
-6	852	8021097891781311	CMakeFiles/ejemplo-mpi.dir/Debug/main.cpp.obj	454bac3d3558764b
-852	2146	8021097900247894	Debug/ejemplo-mpi.exe	676cf9b227649c7
+94	875	8027149810493701	CMakeFiles/ejemplo-mpi.dir/Debug/main.cpp.obj	57e32f74f4721a24
+875	2990	8027149818300573	Debug/ejemplo-mpi.exe	536fc6c9e1aba23a
 2	13	8021097889747397	clean:Debug	1f497b562ec5e547
-6	857	8021110345840733	CMakeFiles/matrices_mult.dir/Debug/matrices_mult.cpp.obj	c9b8772fd1f25801
-858	1815	8021110354366243	Debug/matrices_mult.exe	37bc77330b26148e
+99	1004	8027149810543699	CMakeFiles/matrices_mult.dir/Debug/matrices_mult.cpp.obj	955029b9549ec1ab
+1004	2989	8027149819586125	Debug/matrices_mult.exe	ebfa0023f013e787
+24	430	8027154521463278	CMakeFiles/ejemplo-mpi.dir/Debug/main.cpp.obj	57e32f74f4721a24
+29	561	8027154521513327	CMakeFiles/matrices_mult.dir/Debug/matrices_mult.cpp.obj	955029b9549ec1ab
+431	1160	8027154525535267	Debug/ejemplo-mpi.exe	536fc6c9e1aba23a
+561	1259	8027154526831670	Debug/matrices_mult.exe	ebfa0023f013e787

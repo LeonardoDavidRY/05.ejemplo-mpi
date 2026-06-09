@@ -6,7 +6,7 @@
 #define MATRIX_DIM 25
 
 void imprimir_matriz(const std::vector<double>& A, int rows, int cols){
-    fmt::print("Matriz A local:\n");
+    //fmt::print("Matriz A local:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             fmt::print("{:.2f} ", A[i*cols + j]);
@@ -14,7 +14,23 @@ void imprimir_matriz(const std::vector<double>& A, int rows, int cols){
         fmt::print("\n");
     }
 }
-
+void imprimir_vector(const std::vector<double>& b){
+    //fmt::print("Vector b local:\n");
+    for (size_t i = 0; i < b.size(); i++) {
+        fmt::print("{:.2f} ", b[i]);
+    }
+    fmt::print("\n");
+}
+void multiplicar_matriz_vector(const std::vector<double>& A, const std::vector<double>& b, std::vector<double>& x, int rows, int cols){
+    for (int i = 0; i < rows; i++) {
+        double suma =0;
+        for (int j = 0; j < cols; j++) {
+            int index = i*cols + j;
+            suma += A[index] * b[j];
+        }
+        x[i] = suma;
+    }
+}
 int main(int argc, char **argv)
 {
 
@@ -81,11 +97,45 @@ int main(int argc, char **argv)
                 0,
                 MPI_COMM_WORLD
             );
+            //enviar el vector b
+            MPI_Send(
+                b.data(),
+                MATRIX_DIM, // data.size()
+                MPI_DOUBLE,
+                i,
+                0,
+                MPI_COMM_WORLD
+            );
         }
-        fmt::print("RANK: {}, {} x {} \n", rank, rows_per_rank, MATRIX_DIM);
+        //fmt::print("RANK: {}, {} x {} \n", rank, rows_per_rank, MATRIX_DIM);
+        //realizar multiplicacion
+        multiplicar_matriz_vector(A, b, x, rows_per_rank, MATRIX_DIM);
+
+        for(int i=1;i<nprocs;i++){
+            int filas = rows_per_rank;
+            if (i == nprocs - 1)
+            {
+                filas = rows_per_rank - padding;
+            }
+
+            MPI_Recv(
+                x.data() + (i*rows_per_rank),
+                filas, // data.size()
+                MPI_DOUBLE,
+                i,
+                0,
+                MPI_COMM_WORLD,
+                MPI_STATUS_IGNORE
+            );
+            
+        }
+        //fmt::print("RANK: {}, resultado local x:\n", rank);
+        imprimir_vector(x);
     }
     else
     {
+        std::vector<double> b_local(MATRIX_DIM);
+        
         std::vector<int> data_rec(2);
         MPI_Recv(
             data_rec.data(),
@@ -99,7 +149,7 @@ int main(int argc, char **argv)
         int matrix_dim = data_rec[0];
         int rows = data_rec[1];
 
-        fmt::print("RANK: {}, {} x {} \n", rank, rows, matrix_dim);
+        //fmt::print("RANK: {}, {} x {} \n", rank, rows, matrix_dim);
         
         std::vector<double> A_local(rows*matrix_dim);
 
@@ -111,10 +161,38 @@ int main(int argc, char **argv)
             0,
             MPI_COMM_WORLD,
             MPI_STATUS_IGNORE);
+        MPI_Recv(
+                b_local.data(),
+                MATRIX_DIM,
+                MPI_DOUBLE,
+                0,
+                0,
+                MPI_COMM_WORLD,
+                MPI_STATUS_IGNORE
+            );
             
-            if(rank=2) {
-                imprimir_matriz(A_local, rows, matrix_dim);
+            if(rank==2) {
+                //imprimir_matriz(A_local, rows, matrix_dim);
+                //fmt::print("\n");
+                //imprimir_vector(b_local);
             }
+
+            //realizar multiplicacion
+            std::vector<double> x_local(rows);
+            multiplicar_matriz_vector(A_local, b_local, x_local, rows, matrix_dim);
+
+            //fmt::print("RANK: {}, resultado local x:\n", rank);
+            //imprimir_vector(x_local);
+
+            MPI_Send(
+                x_local.data(),
+                rows, // data.size()
+                MPI_DOUBLE,
+                0,
+                0,
+                MPI_COMM_WORLD
+            );
+
 
     }
     MPI_Finalize();

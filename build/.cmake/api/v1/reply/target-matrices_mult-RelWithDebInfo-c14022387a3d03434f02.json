@@ -20,7 +20,7 @@
 		],
 		"files" : 
 		[
-			"c:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake",
+			"C:/tools/vcpkg-2026.03.18/scripts/buildsystems/vcpkg.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -37,7 +37,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 608,
+				"line" : 612,
 				"parent" : 1
 			},
 			{
@@ -96,6 +96,10 @@
 		[
 			{
 				"fragment" : "-O2 -g -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
